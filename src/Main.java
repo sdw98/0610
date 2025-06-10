@@ -1,24 +1,12 @@
-class Car {
-    String name;
-    String brand;
-    int year;
-
-    public void displayInfo() {
-        System.out.println(
-                "이 차는 브랜드가 " + brand + "고 " +
-                "연식은 " + year + "년식인 " + name + "입니다.");
-    }
-}
-
-
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
+        int [] numbers = {1, 2, 3, 4};  //길이 변경 불가능
+        String name = "h662";           //길이 변경 가능
+        System.out.println(name.length());
+        name = "h6662";                 // 다른 문자열 객체의 참조를 대입
+        System.out.println(name.length());
 
-        car.brand = "벤츠";
-        car.year = 2024;
-        car.name = "G바겐";
 
-        car.displayInfo();
+        System.out.println(numbers.length); //미리 재논 길이의 값
     }
 }
